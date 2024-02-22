@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bgImage {
+  background-image: url("/public/img/container.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.errorjpg {
+  background-image: url("https://drive.google.com/uc?export=view&id=1fXbE528-XfzswOwwd1bbs2VmTf9COpO9");
+  width: 100%;
+  height: 100%;
+}
