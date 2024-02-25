@@ -1,5 +1,5 @@
 import ListItem from "@tiptap/extension-list-item";
-import TextStyle from "@tiptap/extension-text-style";
+// import TextStyle from "@tiptap/extension-text-style";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import React from "react";
@@ -68,7 +68,7 @@ const Rte = ({ childFunc, childData, index }) => {
   const extensions = [
     Video,
     Image,
-    TextStyle.configure({ types: [ListItem.name] }),
+    // TextStyle.configure({ types: [ListItem.name] }),
     StarterKit.configure({
       bulletList: {
         keepMarks: true,
