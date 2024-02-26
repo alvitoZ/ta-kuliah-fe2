@@ -16,9 +16,9 @@ const customText = (e, i) => {
 export function Home() {
   const split = `1. Masukkan Nama Lengkap -2. Masukkan Email -3. Masukkan Password -4. Konfirmasi Password Sebelumnya -5. Pilih Role Optional`;
   const nav = useNavigate();
-  useEffect(() => {
-    nav("/auth/home", { replace: true });
-  }, []);
+//  useEffect(() => {
+  //  nav("/auth/home", { replace: true });
+ // }, []);
   return (
     <div className=" container mx-auto">
     
