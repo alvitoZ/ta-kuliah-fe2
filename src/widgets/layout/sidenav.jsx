@@ -10,19 +10,23 @@ import {
 import { useMaterialTailwindController, setOpenSidenav } from "@/context";
 import { getMethod } from "@/service/auth";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useLocation } from "react-router-dom";
 
 export function Sidenav({ brandImg, brandName, routes }) {
+    const location = useLocation();
   const nav = useNavigate();
   const [role, setRole] = React.useState("");
   React.useEffect(() => {
+      if (location.pathname.includes("auth")) {
+      return;
+    }
     getMethod
       .GetUser()
       .then((res) => {
         setRole(res.data.data.role);
       })
       .catch((err) => {
-        nav("/auth/home", { replace: true });
+        nav("/auth/home");
       });
   }, []);
   const [controller, dispatch] = useMaterialTailwindController();
