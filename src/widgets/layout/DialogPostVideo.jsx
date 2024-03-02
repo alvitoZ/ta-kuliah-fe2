@@ -116,7 +116,7 @@ export function DialogPostVideo({ child }) {
               <input
                 // onChange={(e) => console.log(e.target.files[0].name)}
                 onChange={(e) => onChangePicture(e)}
-                className="block w-32 cursor-pointer rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 focus:outline-none light:border-gray-600 light:bg-gray-700 light:text-gray-400 light:placeholder-gray-400"
+                className="block w-32 cursor-pointer rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
                 type="file"
               />
             </div>
@@ -154,12 +154,12 @@ export function DialogPostVideo({ child }) {
           <DialogFooter className="flex w-full flex-row gap-4">
             <Button
               variant="gradient"
-              color="blue"
+              color="red"
               onClick={() => postGambar(data)}
             >
               tambah video
             </Button>
-            <Button variant="outlined" color="blue" onClick={handleOpenDialog}>
+            <Button variant="outlined" color="red" onClick={handleOpenDialog}>
               batal
             </Button>
           </DialogFooter>
