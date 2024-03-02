@@ -23,7 +23,6 @@ export function Home() {
     <div className=" container mx-auto">
     
       <Card className="w-full max-w-full p-4 text-light-blue-400">
-          <img className="center mx-auto" src="../../public/img/container.jpg" width={"80%"} height={"auto"} alt="img" srcset=""></img>
         <Typography variant="lead" className="py-4 text-start font-bold">
           Tata Cara Register siswa
         </Typography>
