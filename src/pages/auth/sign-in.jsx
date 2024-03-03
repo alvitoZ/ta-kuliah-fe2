@@ -62,7 +62,7 @@ export function SignIn() {
                   onChange={(e) =>
                     setData({
                       ...data,
-                      email: e.target.value,
+                      fullname: e.target.value,
                     })
                   }
                 />
