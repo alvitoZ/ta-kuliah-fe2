@@ -51,12 +51,12 @@ export function SignIn() {
                   variant="small"
                   className="text-left font-bold"
                 >
-                  Email
+                  Fullname
                 </Typography>
                 <Input
                   color="blue"
                   type="text"
-                  label="Masukkan email kamu"
+                  label="Masukkan Fullname kamu"
                   size="lg"
                   className={`form-control`}
                   onChange={(e) =>
